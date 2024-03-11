@@ -11,7 +11,7 @@
 :root {
     --clr:rgba(19, 159, 210, 0.349);
     --sec-bgc: #7298b7;
-    --text-color: rgb(60, 0, 70);
+    --text-color: rgb(105, 95, 106);
     --main-color: #ffffff;
 }
 
@@ -23,13 +23,12 @@ html {
 body {
     /* height: 100vh; */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     flex-wrap: wrap;
     padding-left: 2%;
     padding-right: 2%;
-    background:rgba(0, 0, 255, 1.0)
-    ;
+    background:#2d2e32;
 }
 
 section {
@@ -37,6 +36,7 @@ section {
     padding: 10rem 12% 10rem;
     margin-bottom: 25px;
     border-radius: 50px;
+    color: white;
 }
 
 .header {
@@ -44,21 +44,23 @@ section {
     top: 0;
     left: 0;;
     width: 100%;
-    padding: 2rem 12% 2rem;
-     /* change the background colour of the div */background-color: rgb(48 61 190);
+    /* for adjusting the navbar items to right*/
+    padding: 2rem 3% 2rem;
+     /* change the background colour of the div */background-color: #4b4c5273;;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
     justify-content: right;
+    
 }
-
 
 .header h3 {
     font-size: 4rem;
     color: var(--main-color);
 
 }
+
 
 .navbar a {
     font-size: 1.8rem;
@@ -67,6 +69,15 @@ section {
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 2px solid transparent;
+
+}
+
+.navbar img{
+    position: absolute;
+    top: 0;
+    left:10px;
+    width: 60px;
+
 }
 
 .navbar a:hover, .navbar a.active {
@@ -83,7 +94,7 @@ section {
 .home {
    /* background-color: var(--clr);  */
     display: flex;
-    align-items: center;
+    align-items: center; 
     justify-content: center;
     gap: 15rem;
 }
@@ -103,14 +114,14 @@ span {
 }
 
 .home-content h3 {
-color: black;
+color: white;
 margin-bottom: 2rem;
 margin-top: 1rem;
 font-size: 3.5rem;
 }
 
 .home-content h1 {
-color: black;
+color: white;
 font-size: 7rem;
 font-weight: 700;
 margin-top: 1.5rem;
@@ -131,6 +142,7 @@ cursor: pointer;
 transition: 0.4s ease-in-out;
 }
 
+
 .home-img img:hover {
 box-shadow: 0 0 25px var(--main-color),
             0 0 50px var(--main-color),
@@ -140,7 +152,7 @@ box-shadow: 0 0 25px var(--main-color),
 
 .home-content p {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 450;
     line-height: 1.8;
     max-width: 1000px;
     padding-bottom: 10px;
@@ -204,7 +216,7 @@ box-shadow: 0 0 25px var(--main-color),
     font-weight: 400;
     min-width: 280px;
     padding-top: 20px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 }
 
 .text-animation span {
